@@ -65,6 +65,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_WS_INVISIBLE
 #define wxSTC_WS_VISIBLEALWAYS
 #define wxSTC_WS_VISIBLEAFTERINDENT
+%wxchkver_3_1_0 #define wxSTC_WS_VISIBLEONLYININDENT
 #define wxSTC_EOL_CRLF
 #define wxSTC_EOL_CR
 #define wxSTC_EOL_LF
@@ -72,10 +73,8 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 /// The SC_CP_UTF8 value can be used to enter Unicode mode.
 /// This is the same value as CP_UTF8 in Windows
 #define wxSTC_CP_UTF8
-
-// The SC_CP_DBCS value can be used to indicate a DBCS mode for GTK+.
-// #define wxSTC_CP_DBCS - removed in 2.9.5
-
+%wxchkver_3_1_0 #define wxSTC_IME_WINDOWED
+%wxchkver_3_1_0 #define wxSTC_IME_INLINE
 #define wxSTC_MARKER_MAX
 #define wxSTC_MARK_CIRCLE
 #define wxSTC_MARK_ROUNDRECT
@@ -112,6 +111,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_2 #define wxSTC_MARK_AVAILABLE
 %wxchkver_2_9_2 #define wxSTC_MARK_UNDERLINE
 %wxchkver_2_9_5 #define wxSTC_MARK_RGBAIMAGE
+%wxchkver_3_1_0 #define wxSTC_MARK_BOOKMARK
 #define wxSTC_MARK_CHARACTER
 
 /// Markers used for outlining column.
@@ -123,6 +123,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_MARKNUM_FOLDER
 #define wxSTC_MARKNUM_FOLDEROPEN
 #define wxSTC_MASK_FOLDERS
+%wxchkver_3_1_0 #define wxSTC_MAX_MARGIN
 #define wxSTC_MARGIN_SYMBOL
 #define wxSTC_MARGIN_NUMBER
 %wxchkver_2_8_12 #define wxSTC_MARGIN_BACK
@@ -155,6 +156,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_CHARSET_MAC
 #define wxSTC_CHARSET_OEM
 #define wxSTC_CHARSET_RUSSIAN
+%wxchkver_3_1_0 #define wxSTC_CHARSET_OEM866
 #define wxSTC_CHARSET_CYRILLIC
 #define wxSTC_CHARSET_SHIFTJIS
 #define wxSTC_CHARSET_SYMBOL
@@ -168,6 +170,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_CASE_MIXED
 #define wxSTC_CASE_UPPER
 #define wxSTC_CASE_LOWER
+%wxchkver_3_1_0 #define wxSTC_CASE_CAMEL
 %wxchkver_2_9_5 #define wxSTC_FONT_SIZE_MULTIPLIER
 %wxchkver_2_9_5 #define wxSTC_WEIGHT_NORMAL
 %wxchkver_2_9_5 #define wxSTC_WEIGHT_SEMIBOLD
@@ -187,12 +190,22 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_INDIC_DOTS
 %wxchkver_2_9_5 #define wxSTC_INDIC_SQUIGGLELOW
 %wxchkver_2_9_5 #define wxSTC_INDIC_DOTBOX
+%wxchkver_3_1_0 #define wxSTC_INDIC_SQUIGGLEPIXMAP
+%wxchkver_3_1_0 #define wxSTC_INDIC_COMPOSITIONTHICK
+%wxchkver_3_1_0 #define wxSTC_INDIC_COMPOSITIONTHIN
+%wxchkver_3_1_0 #define wxSTC_INDIC_FULLBOX
+%wxchkver_3_1_0 #define wxSTC_INDIC_TEXTFORE
+%wxchkver_3_1_0 #define wxSTC_INDIC_IME
+%wxchkver_3_1_0 #define wxSTC_INDIC_IME_MAX
 %wxchkver_2_9_5 #define wxSTC_INDIC_MAX
 %wxchkver_2_9_5 #define wxSTC_INDIC_CONTAINER
 #define wxSTC_INDIC0_MASK
 #define wxSTC_INDIC1_MASK
 #define wxSTC_INDIC2_MASK
 #define wxSTC_INDICS_MASK
+%wxchkver_3_1_0 #define wxSTC_INDICVALUEBIT
+%wxchkver_3_1_0 #define wxSTC_INDICVALUEMASK
+%wxchkver_3_1_0 #define wxSTC_INDICFLAG_VALUEFORE
 %wxchkver_2_9_5 #define wxSTC_IV_NONE
 %wxchkver_2_9_5 #define wxSTC_IV_REAL
 %wxchkver_2_9_5 #define wxSTC_IV_LOOKFORWARD
@@ -217,24 +230,32 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_FIND_WORDSTART
 #define wxSTC_FIND_REGEXP
 #define wxSTC_FIND_POSIX
+%wxchkver_3_1_0 #define wxSTC_FIND_CXX11REGEX
 #define wxSTC_FOLDLEVELBASE
 #define wxSTC_FOLDLEVELWHITEFLAG
 #define wxSTC_FOLDLEVELHEADERFLAG
-!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELBOXHEADERFLAG
-!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELBOXFOOTERFLAG
-!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELCONTRACTED
-!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELUNINDENT
 #define wxSTC_FOLDLEVELNUMBERMASK
+%wxchkver_3_1_0 #define wxSTC_FOLDACTION_CONTRACT
+%wxchkver_3_1_0 #define wxSTC_FOLDACTION_EXPAND
+%wxchkver_3_1_0 #define wxSTC_FOLDACTION_TOGGLE
+%wxchkver_3_1_0 #define wxSTC_AUTOMATICFOLD_SHOW
+%wxchkver_3_1_0 #define wxSTC_AUTOMATICFOLD_CLICK
+%wxchkver_3_1_0 #define wxSTC_AUTOMATICFOLD_CHANGE
 #define wxSTC_FOLDFLAG_LINEBEFORE_EXPANDED
 #define wxSTC_FOLDFLAG_LINEBEFORE_CONTRACTED
 #define wxSTC_FOLDFLAG_LINEAFTER_EXPANDED
 #define wxSTC_FOLDFLAG_LINEAFTER_CONTRACTED
 #define wxSTC_FOLDFLAG_LEVELNUMBERS
-!%wxchkver_2_9_2 #define wxSTC_FOLDFLAG_BOX
+%wxchkver_3_1_0 #define wxSTC_FOLDFLAG_LINESTATE
 #define wxSTC_TIME_FOREVER
+%wxchkver_3_1_0 #define wxSTC_IDLESTYLING_NONE
+%wxchkver_3_1_0 #define wxSTC_IDLESTYLING_TOVISIBLE
+%wxchkver_3_1_0 #define wxSTC_IDLESTYLING_AFTERVISIBLE
+%wxchkver_3_1_0 #define wxSTC_IDLESTYLING_ALL
 #define wxSTC_WRAP_NONE
 #define wxSTC_WRAP_WORD
 #define wxSTC_WRAP_CHAR
+%wxchkver_3_1_0 #define wxSTC_WRAP_WHITESPACE
 #define wxSTC_WRAPVISUALFLAG_NONE
 #define wxSTC_WRAPVISUALFLAG_END
 #define wxSTC_WRAPVISUALFLAG_START
@@ -249,6 +270,9 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_CACHE_CARET
 #define wxSTC_CACHE_PAGE
 #define wxSTC_CACHE_DOCUMENT
+%wxchkver_3_1_0 #define wxSTC_PHASES_ONE
+%wxchkver_3_1_0 #define wxSTC_PHASES_TWO
+%wxchkver_3_1_0 #define wxSTC_PHASES_MULTIPLE
 
 /// Control font anti-aliasing.
 %wxchkver_2_9_5 #define wxSTC_EFF_QUALITY_MASK
@@ -264,6 +288,8 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_STATUS_OK
 %wxchkver_2_9_5 #define wxSTC_STATUS_FAILURE
 %wxchkver_2_9_5 #define wxSTC_STATUS_BADALLOC
+%wxchkver_3_1_0 #define wxSTC_STATUS_WARN_START
+%wxchkver_3_1_0 #define wxSTC_STATUS_WARN_REGEX
 #define wxSTC_CURSORNORMAL
 %wxchkver_2_9_5 #define wxSTC_CURSORARROW
 #define wxSTC_CURSORWAIT
@@ -295,7 +321,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 
 /// If CARET_EVEN is not set, instead of having symmetrical UZs,
 /// the left and bottom UZs are extended up to right and top UZs respectively.
-/// This way, we favour the displaying of useful information: the begining of lines,
+/// This way, we favour the displaying of useful information: the beginning of lines,
 /// where most code reside, and the lines after the caret, eg. the body of a function.
 #define wxSTC_CARET_EVEN
 #define wxSTC_SEL_STREAM
@@ -304,6 +330,11 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_SEL_THIN
 %wxchkver_2_9_5 #define wxSTC_CASEINSENSITIVEBEHAVIOUR_RESPECTCASE
 %wxchkver_2_9_5 #define wxSTC_CASEINSENSITIVEBEHAVIOUR_IGNORECASE
+%wxchkver_3_1_0 #define wxSTC_MULTIAUTOC_ONCE
+%wxchkver_3_1_0 #define wxSTC_MULTIAUTOC_EACH
+%wxchkver_3_1_0 #define wxSTC_ORDER_PRESORTED
+%wxchkver_3_1_0 #define wxSTC_ORDER_PERFORMSORT
+%wxchkver_3_1_0 #define wxSTC_ORDER_CUSTOM
 %wxchkver_2_9_5 #define wxSTC_CARETSTICKY_OFF
 %wxchkver_2_9_5 #define wxSTC_CARETSTICKY_ON
 %wxchkver_2_9_5 #define wxSTC_CARETSTICKY_WHITESPACE
@@ -318,12 +349,21 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_ANNOTATION_HIDDEN
 %wxchkver_2_9_5 #define wxSTC_ANNOTATION_STANDARD
 %wxchkver_2_9_5 #define wxSTC_ANNOTATION_BOXED
+%wxchkver_3_1_0 #define wxSTC_ANNOTATION_INDENTED
 %wxchkver_2_9_5 #define wxSTC_UNDO_MAY_COALESCE
 %wxchkver_2_9_5 #define wxSTC_SCVS_NONE
 %wxchkver_2_9_5 #define wxSTC_SCVS_RECTANGULARSELECTION
 %wxchkver_2_9_5 #define wxSTC_SCVS_USERACCESSIBLE
 %wxchkver_2_9_5 #define wxSTC_TECHNOLOGY_DEFAULT
 %wxchkver_2_9_5 #define wxSTC_TECHNOLOGY_DIRECTWRITE
+%wxchkver_3_1_0 #define wxSTC_TECHNOLOGY_DIRECTWRITERETAIN
+%wxchkver_3_1_0 #define wxSTC_TECHNOLOGY_DIRECTWRITEDC
+
+/// Line end types which may be used in addition to LF, CR, and CRLF
+/// SC_LINE_END_TYPE_UNICODE includes U+2028 Line Separator,
+/// U+2029 Paragraph Separator, and U+0085 Next Line
+%wxchkver_3_1_0 #define wxSTC_LINE_END_TYPE_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_LINE_END_TYPE_UNICODE
 
 /// Maximum value of keywordSet parameter of SetKeyWords.
 #define wxSTC_KEYWORDSET_MAX
@@ -355,6 +395,8 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_MOD_CHANGEANNOTATION
 %wxchkver_2_9_5 #define wxSTC_MOD_CONTAINER
 %wxchkver_2_9_5 #define wxSTC_MOD_LEXERSTATE
+%wxchkver_3_1_0 #define wxSTC_MOD_INSERTCHECK
+%wxchkver_3_1_0 #define wxSTC_MOD_CHANGETABSTOPS
 #define wxSTC_MODEVENTMASKALL
 %wxchkver_2_9_5 #define wxSTC_UPDATE_CONTENT
 %wxchkver_2_9_5 #define wxSTC_UPDATE_SELECTION
@@ -390,6 +432,11 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_SCMOD_ALT
 %wxchkver_2_9_5 #define wxSTC_SCMOD_SUPER
 %wxchkver_2_9_5 #define wxSTC_SCMOD_META
+%wxchkver_3_1_0 #define wxSTC_AC_FILLUP
+%wxchkver_3_1_0 #define wxSTC_AC_DOUBLECLICK
+%wxchkver_3_1_0 #define wxSTC_AC_TAB
+%wxchkver_3_1_0 #define wxSTC_AC_NEWLINE
+%wxchkver_3_1_0 #define wxSTC_AC_COMMAND
 
 /// For SciLexer.h
 #define wxSTC_LEX_CONTAINER
@@ -467,8 +514,6 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_LEX_CSOUND
 #define wxSTC_LEX_FREEBASIC
 %wxchkver_2_8_12 #define wxSTC_LEX_INNOSETUP
-%wxchkver_2_8_12 #define wxSTC_LEX_OPAL
-%wxchkver_2_8_12 #define wxSTC_LEX_SPICE
 %wxchkver_2_9_5 #define wxSTC_LEX_OPAL
 %wxchkver_2_9_5 #define wxSTC_LEX_SPICE
 %wxchkver_2_9_5 #define wxSTC_LEX_D
@@ -500,10 +545,18 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_LEX_ECL
 %wxchkver_2_9_5 #define wxSTC_LEX_OSCRIPT
 %wxchkver_2_9_5 #define wxSTC_LEX_VISUALPROLOG
-
-/// These are deprecated, STC_LEX_HTML should be used instead.
-!%wxchkver_2_8 #define wxSTC_LEX_ASP
-!%wxchkver_2_8 #define wxSTC_LEX_PHP
+%wxchkver_3_1_0 #define wxSTC_LEX_LITERATEHASKELL
+%wxchkver_3_1_0 #define wxSTC_LEX_STTXT
+%wxchkver_3_1_0 #define wxSTC_LEX_KVIRC
+%wxchkver_3_1_0 #define wxSTC_LEX_RUST
+%wxchkver_3_1_0 #define wxSTC_LEX_DMAP
+%wxchkver_3_1_0 #define wxSTC_LEX_AS
+%wxchkver_3_1_0 #define wxSTC_LEX_DMIS
+%wxchkver_3_1_0 #define wxSTC_LEX_REGISTRY
+%wxchkver_3_1_0 #define wxSTC_LEX_BIBTEX
+%wxchkver_3_1_0 #define wxSTC_LEX_SREC
+%wxchkver_3_1_0 #define wxSTC_LEX_IHEX
+%wxchkver_3_1_0 #define wxSTC_LEX_TEHEX
 
 /// When a lexer specifies its language as SCLEX_AUTOMATIC it receives a
 /// value assigned in sequence from SCLEX_AUTOMATIC+1.
@@ -527,7 +580,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_P_WORD2
 #define wxSTC_P_DECORATOR
 
-/// Lexical states for SCLEX_CPP
+/// Lexical states for SCLEX_CPP, SCLEX_BULLANT, SCLEX_COBOL, SCLEX_TACL, SCLEX_TAL
 #define wxSTC_C_DEFAULT
 #define wxSTC_C_COMMENT
 #define wxSTC_C_COMMENTLINE
@@ -552,6 +605,10 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_C_TRIPLEVERBATIM
 %wxchkver_2_9_5 #define wxSTC_C_HASHQUOTEDSTRING
 %wxchkver_2_9_5 #define wxSTC_C_PREPROCESSORCOMMENT
+%wxchkver_3_1_0 #define wxSTC_C_PREPROCESSORCOMMENTDOC
+%wxchkver_3_1_0 #define wxSTC_C_USERLITERAL
+%wxchkver_3_1_0 #define wxSTC_C_TASKMARKER
+%wxchkver_3_1_0 #define wxSTC_C_ESCAPESEQUENCE
 
 /// Lexical states for SCLEX_D
 %wxchkver_2_9_5 #define wxSTC_D_DEFAULT
@@ -822,7 +879,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_RB_STDERR
 #define wxSTC_RB_UPPER_BOUND
 
-/// Lexical states for SCLEX_VB, SCLEX_VBSCRIPT, SCLEX_POWERBASIC
+/// Lexical states for SCLEX_VB, SCLEX_VBSCRIPT, SCLEX_POWERBASIC, SCLEX_BLITZBASIC, SCLEX_PUREBASIC, SCLEX_FREEBASIC
 #define wxSTC_B_DEFAULT
 #define wxSTC_B_COMMENT
 #define wxSTC_B_NUMBER
@@ -842,6 +899,10 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_B_ERROR
 #define wxSTC_B_HEXNUMBER
 #define wxSTC_B_BINNUMBER
+%wxchkver_3_1_0 #define wxSTC_B_COMMENTBLOCK
+%wxchkver_3_1_0 #define wxSTC_B_DOCLINE
+%wxchkver_3_1_0 #define wxSTC_B_DOCBLOCK
+%wxchkver_3_1_0 #define wxSTC_B_DOCKEYWORD
 
 /// Lexical states for SCLEX_PROPERTIES
 #define wxSTC_PROPS_DEFAULT
@@ -912,6 +973,25 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_ERR_TIDY
 #define wxSTC_ERR_JAVA_STACK
 %wxchkver_2_9_5 #define wxSTC_ERR_VALUE
+%wxchkver_3_1_0 #define wxSTC_ERR_GCC_INCLUDED_FROM
+%wxchkver_3_1_0 #define wxSTC_ERR_ESCSEQ
+%wxchkver_3_1_0 #define wxSTC_ERR_ESCSEQ_UNKNOWN
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BLACK
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_RED
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_GREEN
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BROWN
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BLUE
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_MAGENTA
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_CYAN
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_GRAY
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_DARK_GRAY
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BRIGHT_RED
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BRIGHT_GREEN
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_YELLOW
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BRIGHT_BLUE
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BRIGHT_MAGENTA
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_BRIGHT_CYAN
+%wxchkver_3_1_0 #define wxSTC_ERR_ES_WHITE
 
 /// Lexical states for SCLEX_BATCH
 #define wxSTC_BAT_DEFAULT
@@ -1094,7 +1174,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_SCRIPTOL_CLASSNAME
 #define wxSTC_SCRIPTOL_PREPROCESSOR
 
-/// Lexical states for SCLEX_ASM
+/// Lexical states for SCLEX_ASM, SCLEX_AS
 #define wxSTC_ASM_DEFAULT
 #define wxSTC_ASM_COMMENT
 #define wxSTC_ASM_NUMBER
@@ -1328,7 +1408,6 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_ERLANG_CHARACTER
 #define wxSTC_ERLANG_MACRO
 #define wxSTC_ERLANG_RECORD
-!%wxchkver_2_9_2 #define wxSTC_ERLANG_SEPARATOR
 %wxchkver_2_9_5 #define wxSTC_ERLANG_PREPROC
 %wxchkver_2_9_5 #define wxSTC_ERLANG_NODE_NAME
 %wxchkver_2_9_5 #define wxSTC_ERLANG_COMMENT_FUNCTION
@@ -1379,6 +1458,11 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_V_IDENTIFIER
 #define wxSTC_V_STRINGEOL
 #define wxSTC_V_USER
+%wxchkver_3_1_0 #define wxSTC_V_COMMENT_WORD
+%wxchkver_3_1_0 #define wxSTC_V_INPUT
+%wxchkver_3_1_0 #define wxSTC_V_OUTPUT
+%wxchkver_3_1_0 #define wxSTC_V_INOUT
+%wxchkver_3_1_0 #define wxSTC_V_PORT_CONNECT
 
 /// Lexical states for SCLEX_KIX
 #define wxSTC_KIX_DEFAULT
@@ -1391,6 +1475,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_KIX_KEYWORD
 #define wxSTC_KIX_FUNCTIONS
 #define wxSTC_KIX_OPERATOR
+%wxchkver_3_1_0 #define wxSTC_KIX_COMMENTSTREAM
 #define wxSTC_KIX_IDENTIFIER
 
 /// Lexical states for SCLEX_GUI4CLI
@@ -1501,6 +1586,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_VHDL_STDPACKAGE
 #define wxSTC_VHDL_STDTYPE
 #define wxSTC_VHDL_USERWORD
+%wxchkver_3_1_0 #define wxSTC_VHDL_BLOCK_COMMENT
 
 /// Lexical states for SCLEX_CAML
 #define wxSTC_CAML_DEFAULT
@@ -1538,6 +1624,12 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_HA_COMMENTBLOCK
 #define wxSTC_HA_COMMENTBLOCK2
 #define wxSTC_HA_COMMENTBLOCK3
+%wxchkver_3_1_0 #define wxSTC_HA_PRAGMA
+%wxchkver_3_1_0 #define wxSTC_HA_PREPROCESSOR
+%wxchkver_3_1_0 #define wxSTC_HA_STRINGEOL
+%wxchkver_3_1_0 #define wxSTC_HA_RESERVED_OPERATOR
+%wxchkver_3_1_0 #define wxSTC_HA_LITERATE_COMMENT
+%wxchkver_3_1_0 #define wxSTC_HA_LITERATE_CODEDELIM
 
 /// Lexical states of SCLEX_TADS3
 #define wxSTC_T3_DEFAULT
@@ -1616,6 +1708,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_SQL_USER3
 #define wxSTC_SQL_USER4
 #define wxSTC_SQL_QUOTEDIDENTIFIER
+%wxchkver_3_1_0 #define wxSTC_SQL_QOPERATOR
 
 /// Lexical states for SCLEX_SMALLTALK
 #define wxSTC_ST_DEFAULT
@@ -1669,11 +1762,6 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_FS_OPERATOR_C
 %wxchkver_2_9_5 #define wxSTC_FS_IDENTIFIER_C
 %wxchkver_2_9_5 #define wxSTC_FS_STRINGEOL_C
-//#define wxSTC_FS_ASM        - Removed in 2.9.5
-//#define wxSTC_FS_LABEL      - Removed in 2.9.5
-//#define wxSTC_FS_ERROR      - Removed in 2.9.5
-//#define wxSTC_FS_HEXNUMBER  - Removed in 2.9.5
-//#define wxSTC_FS_BINNUMBER  - Removed in 2.9.5
 
 /// Lexical states for SCLEX_CSOUND
 #define wxSTC_CSOUND_DEFAULT
@@ -1692,7 +1780,6 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_CSOUND_IRATE_VAR
 #define wxSTC_CSOUND_GLOBAL_VAR
 #define wxSTC_CSOUND_STRINGEOL
-
 
 /// Lexical states for SCLEX_INNOSETUP
 %wxchkver_2_8_12 #define wxSTC_INNO_DEFAULT
@@ -1731,8 +1818,6 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_8_12 #define wxSTC_SPICE_DELIMITER
 %wxchkver_2_8_12 #define wxSTC_SPICE_VALUE
 %wxchkver_2_8_12 #define wxSTC_SPICE_COMMENTLINE
-
-
 
 /// Lexical states for SCLEX_CMAKE
 %wxchkver_2_9_5 #define wxSTC_CMAKE_DEFAULT
@@ -1852,7 +1937,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_R_INFIX
 %wxchkver_2_9_5 #define wxSTC_R_INFIXEOL
 
-/// Lexical state for SCLEX_MAGIKSF
+/// Lexical state for SCLEX_MAGIK
 %wxchkver_2_9_5 #define wxSTC_MAGIK_DEFAULT
 %wxchkver_2_9_5 #define wxSTC_MAGIK_COMMENT
 %wxchkver_2_9_5 #define wxSTC_MAGIK_HYPER_COMMENT
@@ -1886,6 +1971,9 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_POWERSHELL_FUNCTION
 %wxchkver_2_9_5 #define wxSTC_POWERSHELL_USER1
 %wxchkver_2_9_5 #define wxSTC_POWERSHELL_COMMENTSTREAM
+%wxchkver_3_1_0 #define wxSTC_POWERSHELL_HERE_STRING
+%wxchkver_3_1_0 #define wxSTC_POWERSHELL_HERE_CHARACTER
+%wxchkver_3_1_0 #define wxSTC_POWERSHELL_COMMENTDOCKEYWORD
 
 /// Lexical state for SCLEX_MYSQL
 %wxchkver_2_9_5 #define wxSTC_MYSQL_DEFAULT
@@ -1910,6 +1998,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_MYSQL_USER2
 %wxchkver_2_9_5 #define wxSTC_MYSQL_USER3
 %wxchkver_2_9_5 #define wxSTC_MYSQL_HIDDENCOMMAND
+%wxchkver_3_1_0 #define wxSTC_MYSQL_PLACEHOLDER
 
 /// Lexical state for SCLEX_PO
 %wxchkver_2_9_5 #define wxSTC_PO_DEFAULT
@@ -1921,6 +2010,13 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_PO_MSGCTXT
 %wxchkver_2_9_5 #define wxSTC_PO_MSGCTXT_TEXT
 %wxchkver_2_9_5 #define wxSTC_PO_FUZZY
+%wxchkver_3_1_0 #define wxSTC_PO_PROGRAMMER_COMMENT
+%wxchkver_3_1_0 #define wxSTC_PO_REFERENCE
+%wxchkver_3_1_0 #define wxSTC_PO_FLAGS
+%wxchkver_3_1_0 #define wxSTC_PO_MSGID_TEXT_EOL
+%wxchkver_3_1_0 #define wxSTC_PO_MSGSTR_TEXT_EOL
+%wxchkver_3_1_0 #define wxSTC_PO_MSGCTXT_TEXT_EOL
+%wxchkver_3_1_0 #define wxSTC_PO_ERROR
 
 /// Lexical states for SCLEX_PASCAL
 %wxchkver_2_9_5 #define wxSTC_PAS_DEFAULT
@@ -2103,10 +2199,10 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_COFFEESCRIPT_GLOBALCLASS
 %wxchkver_2_9_5 #define wxSTC_COFFEESCRIPT_STRINGRAW
 %wxchkver_2_9_5 #define wxSTC_COFFEESCRIPT_TRIPLEVERBATIM
-%wxchkver_2_9_5 && !%wxchkver_3_1_0 #define wxSTC_COFFEESCRIPT_HASHQUOTEDSTRING
 %wxchkver_2_9_5 #define wxSTC_COFFEESCRIPT_COMMENTBLOCK
 %wxchkver_2_9_5 #define wxSTC_COFFEESCRIPT_VERBOSE_REGEX
 %wxchkver_2_9_5 #define wxSTC_COFFEESCRIPT_VERBOSE_REGEX_COMMENT
+%wxchkver_3_1_0 #define wxSTC_COFFEESCRIPT_INSTANCEPROPERTY
 
 /// Lexical states for SCLEX_AVS
 %wxchkver_2_9_5 #define wxSTC_AVS_DEFAULT
@@ -2200,6 +2296,155 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 %wxchkver_2_9_5 #define wxSTC_VISUALPROLOG_STRING_VERBATIM
 %wxchkver_2_9_5 #define wxSTC_VISUALPROLOG_STRING_VERBATIM_SPECIAL
 %wxchkver_2_9_5 #define wxSTC_VISUALPROLOG_STRING_VERBATIM_EOL
+
+/// Lexical states for SCLEX_STTXT
+%wxchkver_3_1_0 #define wxSTC_STTXT_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_STTXT_COMMENT
+%wxchkver_3_1_0 #define wxSTC_STTXT_COMMENTLINE
+%wxchkver_3_1_0 #define wxSTC_STTXT_KEYWORD
+%wxchkver_3_1_0 #define wxSTC_STTXT_TYPE
+%wxchkver_3_1_0 #define wxSTC_STTXT_FUNCTION
+%wxchkver_3_1_0 #define wxSTC_STTXT_FB
+%wxchkver_3_1_0 #define wxSTC_STTXT_NUMBER
+%wxchkver_3_1_0 #define wxSTC_STTXT_HEXNUMBER
+%wxchkver_3_1_0 #define wxSTC_STTXT_PRAGMA
+%wxchkver_3_1_0 #define wxSTC_STTXT_OPERATOR
+%wxchkver_3_1_0 #define wxSTC_STTXT_CHARACTER
+%wxchkver_3_1_0 #define wxSTC_STTXT_STRING1
+%wxchkver_3_1_0 #define wxSTC_STTXT_STRING2
+%wxchkver_3_1_0 #define wxSTC_STTXT_STRINGEOL
+%wxchkver_3_1_0 #define wxSTC_STTXT_IDENTIFIER
+%wxchkver_3_1_0 #define wxSTC_STTXT_DATETIME
+%wxchkver_3_1_0 #define wxSTC_STTXT_VARS
+%wxchkver_3_1_0 #define wxSTC_STTXT_PRAGMAS
+
+/// Lexical states for SCLEX_KVIRC
+%wxchkver_3_1_0 #define wxSTC_KVIRC_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_KVIRC_COMMENT
+%wxchkver_3_1_0 #define wxSTC_KVIRC_COMMENTBLOCK
+%wxchkver_3_1_0 #define wxSTC_KVIRC_STRING
+%wxchkver_3_1_0 #define wxSTC_KVIRC_WORD
+%wxchkver_3_1_0 #define wxSTC_KVIRC_KEYWORD
+%wxchkver_3_1_0 #define wxSTC_KVIRC_FUNCTION_KEYWORD
+%wxchkver_3_1_0 #define wxSTC_KVIRC_FUNCTION
+%wxchkver_3_1_0 #define wxSTC_KVIRC_VARIABLE
+%wxchkver_3_1_0 #define wxSTC_KVIRC_NUMBER
+%wxchkver_3_1_0 #define wxSTC_KVIRC_OPERATOR
+%wxchkver_3_1_0 #define wxSTC_KVIRC_STRING_FUNCTION
+%wxchkver_3_1_0 #define wxSTC_KVIRC_STRING_VARIABLE
+
+/// Lexical states for SCLEX_RUST
+%wxchkver_3_1_0 #define wxSTC_RUST_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_RUST_COMMENTBLOCK
+%wxchkver_3_1_0 #define wxSTC_RUST_COMMENTLINE
+%wxchkver_3_1_0 #define wxSTC_RUST_COMMENTBLOCKDOC
+%wxchkver_3_1_0 #define wxSTC_RUST_COMMENTLINEDOC
+%wxchkver_3_1_0 #define wxSTC_RUST_NUMBER
+%wxchkver_3_1_0 #define wxSTC_RUST_WORD
+%wxchkver_3_1_0 #define wxSTC_RUST_WORD2
+%wxchkver_3_1_0 #define wxSTC_RUST_WORD3
+%wxchkver_3_1_0 #define wxSTC_RUST_WORD4
+%wxchkver_3_1_0 #define wxSTC_RUST_WORD5
+%wxchkver_3_1_0 #define wxSTC_RUST_WORD6
+%wxchkver_3_1_0 #define wxSTC_RUST_WORD7
+%wxchkver_3_1_0 #define wxSTC_RUST_STRING
+%wxchkver_3_1_0 #define wxSTC_RUST_STRINGR
+%wxchkver_3_1_0 #define wxSTC_RUST_CHARACTER
+%wxchkver_3_1_0 #define wxSTC_RUST_OPERATOR
+%wxchkver_3_1_0 #define wxSTC_RUST_IDENTIFIER
+%wxchkver_3_1_0 #define wxSTC_RUST_LIFETIME
+%wxchkver_3_1_0 #define wxSTC_RUST_MACRO
+%wxchkver_3_1_0 #define wxSTC_RUST_LEXERROR
+%wxchkver_3_1_0 #define wxSTC_RUST_BYTESTRING
+%wxchkver_3_1_0 #define wxSTC_RUST_BYTESTRINGR
+%wxchkver_3_1_0 #define wxSTC_RUST_BYTECHARACTER
+
+/// Lexical states for SCLEX_DMAP
+%wxchkver_3_1_0 #define wxSTC_DMAP_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_DMAP_COMMENT
+%wxchkver_3_1_0 #define wxSTC_DMAP_NUMBER
+%wxchkver_3_1_0 #define wxSTC_DMAP_STRING1
+%wxchkver_3_1_0 #define wxSTC_DMAP_STRING2
+%wxchkver_3_1_0 #define wxSTC_DMAP_STRINGEOL
+%wxchkver_3_1_0 #define wxSTC_DMAP_OPERATOR
+%wxchkver_3_1_0 #define wxSTC_DMAP_IDENTIFIER
+%wxchkver_3_1_0 #define wxSTC_DMAP_WORD
+%wxchkver_3_1_0 #define wxSTC_DMAP_WORD2
+%wxchkver_3_1_0 #define wxSTC_DMAP_WORD3
+
+/// Lexical states for SCLEX_DMIS
+%wxchkver_3_1_0 #define wxSTC_DMIS_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_DMIS_COMMENT
+%wxchkver_3_1_0 #define wxSTC_DMIS_STRING
+%wxchkver_3_1_0 #define wxSTC_DMIS_NUMBER
+%wxchkver_3_1_0 #define wxSTC_DMIS_KEYWORD
+%wxchkver_3_1_0 #define wxSTC_DMIS_MAJORWORD
+%wxchkver_3_1_0 #define wxSTC_DMIS_MINORWORD
+%wxchkver_3_1_0 #define wxSTC_DMIS_UNSUPPORTED_MAJOR
+%wxchkver_3_1_0 #define wxSTC_DMIS_UNSUPPORTED_MINOR
+%wxchkver_3_1_0 #define wxSTC_DMIS_LABEL
+
+/// Lexical states for SCLEX_REGISTRY
+%wxchkver_3_1_0 #define wxSTC_REG_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_REG_COMMENT
+%wxchkver_3_1_0 #define wxSTC_REG_VALUENAME
+%wxchkver_3_1_0 #define wxSTC_REG_STRING
+%wxchkver_3_1_0 #define wxSTC_REG_HEXDIGIT
+%wxchkver_3_1_0 #define wxSTC_REG_VALUETYPE
+%wxchkver_3_1_0 #define wxSTC_REG_ADDEDKEY
+%wxchkver_3_1_0 #define wxSTC_REG_DELETEDKEY
+%wxchkver_3_1_0 #define wxSTC_REG_ESCAPED
+%wxchkver_3_1_0 #define wxSTC_REG_KEYPATH_GUID
+%wxchkver_3_1_0 #define wxSTC_REG_STRING_GUID
+%wxchkver_3_1_0 #define wxSTC_REG_PARAMETER
+%wxchkver_3_1_0 #define wxSTC_REG_OPERATOR
+
+/// Lexical state for SCLEX_BIBTEX
+%wxchkver_3_1_0 #define wxSTC_BIBTEX_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_BIBTEX_ENTRY
+%wxchkver_3_1_0 #define wxSTC_BIBTEX_UNKNOWN_ENTRY
+%wxchkver_3_1_0 #define wxSTC_BIBTEX_KEY
+%wxchkver_3_1_0 #define wxSTC_BIBTEX_PARAMETER
+%wxchkver_3_1_0 #define wxSTC_BIBTEX_VALUE
+%wxchkver_3_1_0 #define wxSTC_BIBTEX_COMMENT
+
+/// Lexical state for SCLEX_SREC
+%wxchkver_3_1_0 #define wxSTC_HEX_DEFAULT
+%wxchkver_3_1_0 #define wxSTC_HEX_RECSTART
+%wxchkver_3_1_0 #define wxSTC_HEX_RECTYPE
+%wxchkver_3_1_0 #define wxSTC_HEX_RECTYPE_UNKNOWN
+%wxchkver_3_1_0 #define wxSTC_HEX_BYTECOUNT
+%wxchkver_3_1_0 #define wxSTC_HEX_BYTECOUNT_WRONG
+%wxchkver_3_1_0 #define wxSTC_HEX_NOADDRESS
+%wxchkver_3_1_0 #define wxSTC_HEX_DATAADDRESS
+%wxchkver_3_1_0 #define wxSTC_HEX_RECCOUNT
+%wxchkver_3_1_0 #define wxSTC_HEX_STARTADDRESS
+%wxchkver_3_1_0 #define wxSTC_HEX_ADDRESSFIELD_UNKNOWN
+%wxchkver_3_1_0 #define wxSTC_HEX_EXTENDEDADDRESS
+%wxchkver_3_1_0 #define wxSTC_HEX_DATA_ODD
+%wxchkver_3_1_0 #define wxSTC_HEX_DATA_EVEN
+%wxchkver_3_1_0 #define wxSTC_HEX_DATA_UNKNOWN
+%wxchkver_3_1_0 #define wxSTC_HEX_DATA_EMPTY
+%wxchkver_3_1_0 #define wxSTC_HEX_CHECKSUM
+%wxchkver_3_1_0 #define wxSTC_HEX_CHECKSUM_WRONG
+%wxchkver_3_1_0 #define wxSTC_HEX_GARBAGE
+
+// deprecated items
+!%wxchkver_2_8 #define wxSTC_LEX_ASP
+!%wxchkver_2_8 #define wxSTC_LEX_PHP
+!%wxchkver_2_9_2 #define wxSTC_ERLANG_SEPARATOR
+!%wxchkver_2_9_2 #define wxSTC_FOLDFLAG_BOX
+!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELBOXFOOTERFLAG
+!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELBOXHEADERFLAG
+!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELCONTRACTED
+!%wxchkver_2_9_2 #define wxSTC_FOLDLEVELUNINDENT
+%wxchkver_2_9_5 && !%wxchkver_3_1_0 #define wxSTC_COFFEESCRIPT_HASHQUOTEDSTRING
+//#define wxSTC_CP_DBCS       - Removed in 2.9.5
+//#define wxSTC_FS_ASM        - Removed in 2.9.5
+//#define wxSTC_FS_BINNUMBER  - Removed in 2.9.5
+//#define wxSTC_FS_ERROR      - Removed in 2.9.5
+//#define wxSTC_FS_HEXNUMBER  - Removed in 2.9.5
+//#define wxSTC_FS_LABEL      - Removed in 2.9.5
 
 //}}}
 //----------------------------------------------------------------------
@@ -2495,6 +2740,14 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 
 /// Scroll to end of document.
 %wxchkver_2_9_5 #define wxSTC_CMD_SCROLLTOEND
+
+/// Move caret to before first visible character on display line.
+/// If already there move to first character on display line.
+%wxchkver_3_1_0 #define wxSTC_CMD_VCHOMEDISPLAY
+
+/// Like VCHomeDisplay but extending selection to new caret position.
+%wxchkver_3_1_0 #define wxSTC_CMD_VCHOMEDISPLAYEXTEND
+
 
 //}}}
 //----------------------------------------------------------------------
