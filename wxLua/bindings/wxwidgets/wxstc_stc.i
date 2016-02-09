@@ -22,35 +22,6 @@
                the special "{{{" and "}}}" markers, the rest of it is copied
                verbatim from src.h.in.
  */
-/*
-#ifndef _WX_STC_STC_H_
-#define _WX_STC_STC_H_
-
-#include "wx/defs.h"
-
-#if wxUSE_STC
-
-#include "wx/control.h"
-#include "wx/dnd.h"
-#include "wx/stopwatch.h"
-#include "wx/versioninfo.h"
-
-#include "wx/textentry.h"
-#if wxUSE_TEXTCTRL
-    #include "wx/textctrl.h"
-#endif // wxUSE_TEXTCTRL
-
-class WXDLLIMPEXP_FWD_CORE wxScrollBar;
-
-// SWIG can't handle "#if" type of conditionals, only "#ifdef"
-#ifdef SWIG
-#define STC_USE_DND 1
-#else
-#if wxUSE_DRAG_AND_DROP
-#define STC_USE_DND 1
-#endif
-#endif
-*/
 
 //----------------------------------------------------------------------
 // STC constants generated section {{{
@@ -4899,6 +4870,10 @@ class wxStyledTextCtrl : public wxControl
     // C++ Func: void GetSelection(int* startPos, int* endPos);
     void GetSelection();
 //#endif
+
+    // Select a range of text.
+    void SetSelection(int start, int end);
+
 
     // Retrieve the point in the window where a position is displayed.
     wxPoint PointFromPosition(int pos);
