@@ -4795,7 +4795,6 @@ class wxStyledTextCtrl : public wxControl
     !%wxchkver_2_9_5 void SetCaretSticky(bool useCaretStickyBehaviour);
     !%wxchkver_2_9_5 void SetIndentationGuides(bool show);
     !%wxchkver_3_1_0 int PositionFromPoint(const wxPoint& pt) const;
-    !%wxchkver_3_1_0 void SetSelection(int start, int end);
     // %override [Lua string styleBytes] wxStyledTextCtrl::SetStyleBytes(int length, Lua string styleBytes );
     // %override [int linePos] wxStyledTextCtrl::GetCurLine( );
     // C++ Func: wxString GetCurLine(int* linePos=NULL);

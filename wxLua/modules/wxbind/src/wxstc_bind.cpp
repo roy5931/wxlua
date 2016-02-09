@@ -9863,32 +9863,11 @@ static int LUACALL wxLua_wxStyledTextCtrl_SetSelForeground(lua_State *L)
 
 #endif // wxLUA_USE_wxColourPenBrush
 
-#if !wxCHECK_VERSION(3,1,0)
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetSelection[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, &wxluatype_TNUMBER, NULL };
 static int LUACALL wxLua_wxStyledTextCtrl_SetSelection(lua_State *L);
-// static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection[1] = {{ wxLua_wxStyledTextCtrl_SetSelection, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetSelection }};
-//     !%wxchkver_3_1_0 void SetSelection(int start, int end);
-static int LUACALL wxLua_wxStyledTextCtrl_SetSelection(lua_State *L)
-{
-    // int end
-    int end = (int)wxlua_getnumbertype(L, 3);
-    // int start
-    int start = (int)wxlua_getnumbertype(L, 2);
-    // get this
-    wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
-    // call SetSelection
-    self->SetSelection(start, end);
-
-    return 0;
-}
-
-#endif // !wxCHECK_VERSION(3,1,0)
-
-static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetSelection1[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, &wxluatype_TNUMBER, NULL };
-static int LUACALL wxLua_wxStyledTextCtrl_SetSelection1(lua_State *L);
-// static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection1[1] = {{ wxLua_wxStyledTextCtrl_SetSelection1, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetSelection1 }};
+static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection[1] = {{ wxLua_wxStyledTextCtrl_SetSelection, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetSelection }};
 //     void SetSelection(int start, int end);
-static int LUACALL wxLua_wxStyledTextCtrl_SetSelection1(lua_State *L)
+static int LUACALL wxLua_wxStyledTextCtrl_SetSelection(lua_State *L)
 {
     // int end
     int end = (int)wxlua_getnumbertype(L, 3);
@@ -12223,20 +12202,6 @@ static int s_wxluafunc_wxLua_wxStyledTextCtrl_SetIndentationGuides_overload_coun
 
 #endif // (!wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(2,9,5))
 
-#if (!wxCHECK_VERSION(3,1,0))
-// function overload table
-static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection_overload[] =
-{
-
-#if !wxCHECK_VERSION(3,1,0)
-    { wxLua_wxStyledTextCtrl_SetSelection, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetSelection },
-#endif // !wxCHECK_VERSION(3,1,0)
-    { wxLua_wxStyledTextCtrl_SetSelection1, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetSelection1 },
-};
-static int s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection_overload_count = sizeof(s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection_overload)/sizeof(wxLuaBindCFunc);
-
-#endif // (!wxCHECK_VERSION(3,1,0))
-
 void wxLua_wxStyledTextCtrl_delete_function(void** p)
 {
     wxStyledTextCtrl* o = (wxStyledTextCtrl*)(*p);
@@ -13353,10 +13318,7 @@ wxLuaBindMethod wxStyledTextCtrl_methods[] = {
     { "SetSelForeground", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelForeground, 1, NULL },
 #endif // wxLUA_USE_wxColourPenBrush
 
-#if (!wxCHECK_VERSION(3,1,0))
-    { "SetSelection", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection_overload, s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection_overload_count, 0 },
-#endif // (!wxCHECK_VERSION(3,1,0))
-
+    { "SetSelection", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelection, 1, NULL },
     { "SetSelectionEnd", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelectionEnd, 1, NULL },
     { "SetSelectionMode", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetSelectionMode, 1, NULL },
 
