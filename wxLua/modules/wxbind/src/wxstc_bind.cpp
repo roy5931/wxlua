@@ -46,12 +46,12 @@ static int LUACALL wxLua_wxStyledTextCtrl_AddRefDocument(lua_State *L)
 }
 
 
-#if wxCHECK_VERSION(2,9,5)
-static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, &wxluatype_TNUMBER, NULL };
-static int LUACALL wxLua_wxStyledTextCtrl_AddSelection(lua_State *L);
-static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection[1] = {{ wxLua_wxStyledTextCtrl_AddSelection, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection }};
-//     %wxchkver_2_9_5 int AddSelection(int caret, int anchor);
-static int LUACALL wxLua_wxStyledTextCtrl_AddSelection(lua_State *L)
+#if !wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5)
+static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection1[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, &wxluatype_TNUMBER, NULL };
+static int LUACALL wxLua_wxStyledTextCtrl_AddSelection1(lua_State *L);
+// static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection1[1] = {{ wxLua_wxStyledTextCtrl_AddSelection1, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection1 }};
+//     !%wxchkver_3_1_1 && %wxchkver_2_9_5 int AddSelection(int caret, int anchor);
+static int LUACALL wxLua_wxStyledTextCtrl_AddSelection1(lua_State *L)
 {
     // int anchor
     int anchor = (int)wxlua_getnumbertype(L, 3);
@@ -67,7 +67,28 @@ static int LUACALL wxLua_wxStyledTextCtrl_AddSelection(lua_State *L)
     return 1;
 }
 
-#endif // wxCHECK_VERSION(2,9,5)
+#endif // !wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5)
+
+#if wxCHECK_VERSION(3,1,1)
+static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, &wxluatype_TNUMBER, NULL };
+static int LUACALL wxLua_wxStyledTextCtrl_AddSelection(lua_State *L);
+// static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection[1] = {{ wxLua_wxStyledTextCtrl_AddSelection, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection }};
+//     %wxchkver_3_1_1 void AddSelection(int caret, int anchor);
+static int LUACALL wxLua_wxStyledTextCtrl_AddSelection(lua_State *L)
+{
+    // int anchor
+    int anchor = (int)wxlua_getnumbertype(L, 3);
+    // int caret
+    int caret = (int)wxlua_getnumbertype(L, 2);
+    // get this
+    wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
+    // call AddSelection
+    self->AddSelection(caret, anchor);
+
+    return 0;
+}
+
+#endif // wxCHECK_VERSION(3,1,1)
 
 #if wxCHECK_VERSION(3,1,0)
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddTabStop[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, &wxluatype_TNUMBER, NULL };
@@ -2585,6 +2606,25 @@ static int LUACALL wxLua_wxStyledTextCtrl_FreeSubStyles(lua_State *L)
 
 #endif // wxCHECK_VERSION(3,1,0)
 
+#if wxCHECK_VERSION(3,1,1)
+static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetAccessibility[] = { &wxluatype_wxStyledTextCtrl, NULL };
+static int LUACALL wxLua_wxStyledTextCtrl_GetAccessibility(lua_State *L);
+static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_GetAccessibility[1] = {{ wxLua_wxStyledTextCtrl_GetAccessibility, WXLUAMETHOD_METHOD, 1, 1, s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetAccessibility }};
+//     %wxchkver_3_1_1 int GetAccessibility() const;
+static int LUACALL wxLua_wxStyledTextCtrl_GetAccessibility(lua_State *L)
+{
+    // get this
+    wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
+    // call GetAccessibility
+    int returns = (self->GetAccessibility());
+    // push the result number
+    lua_pushnumber(L, returns);
+
+    return 1;
+}
+
+#endif // wxCHECK_VERSION(3,1,1)
+
 #if (wxCHECK_VERSION(2,9,5)) && (wxLUA_USE_wxColourPenBrush)
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetAdditionalCaretForeground[] = { &wxluatype_wxStyledTextCtrl, NULL };
 static int LUACALL wxLua_wxStyledTextCtrl_GetAdditionalCaretForeground(lua_State *L);
@@ -2843,6 +2883,25 @@ static int LUACALL wxLua_wxStyledTextCtrl_GetCaretLineBackground(lua_State *L)
 }
 
 #endif // (wxCHECK_VERSION(2,8,0)) && (wxLUA_USE_wxColourPenBrush)
+
+#if wxCHECK_VERSION(3,1,1)
+static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetCaretLineFrame[] = { &wxluatype_wxStyledTextCtrl, NULL };
+static int LUACALL wxLua_wxStyledTextCtrl_GetCaretLineFrame(lua_State *L);
+static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_GetCaretLineFrame[1] = {{ wxLua_wxStyledTextCtrl_GetCaretLineFrame, WXLUAMETHOD_METHOD, 1, 1, s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetCaretLineFrame }};
+//     %wxchkver_3_1_1 int GetCaretLineFrame() const;
+static int LUACALL wxLua_wxStyledTextCtrl_GetCaretLineFrame(lua_State *L)
+{
+    // get this
+    wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
+    // call GetCaretLineFrame
+    int returns = (self->GetCaretLineFrame());
+    // push the result number
+    lua_pushnumber(L, returns);
+
+    return 1;
+}
+
+#endif // wxCHECK_VERSION(3,1,1)
 
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetCaretLineVisible[] = { &wxluatype_wxStyledTextCtrl, NULL };
 static int LUACALL wxLua_wxStyledTextCtrl_GetCaretLineVisible(lua_State *L);
@@ -3533,23 +3592,26 @@ static int LUACALL wxLua_wxStyledTextCtrl_GetIndentationGuides1(lua_State *L)
     return 1;
 }
 
+#endif // !wxCHECK_VERSION(2,9,5)
+
+#if wxCHECK_VERSION(3,1,1)
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetIndentationGuides[] = { &wxluatype_wxStyledTextCtrl, NULL };
 static int LUACALL wxLua_wxStyledTextCtrl_GetIndentationGuides(lua_State *L);
 // static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndentationGuides[1] = {{ wxLua_wxStyledTextCtrl_GetIndentationGuides, WXLUAMETHOD_METHOD, 1, 1, s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetIndentationGuides }};
-//     !%wxchkver_2_9_5 bool GetIndentationGuides();
+//     %wxchkver_3_1_1 int GetIndentationGuides() const;
 static int LUACALL wxLua_wxStyledTextCtrl_GetIndentationGuides(lua_State *L)
 {
     // get this
     wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
     // call GetIndentationGuides
-    bool returns = (self->GetIndentationGuides());
-    // push the result flag
-    lua_pushboolean(L, returns);
+    int returns = (self->GetIndentationGuides());
+    // push the result number
+    lua_pushnumber(L, returns);
 
     return 1;
 }
 
-#endif // !wxCHECK_VERSION(2,9,5)
+#endif // wxCHECK_VERSION(3,1,1)
 
 #if wxCHECK_VERSION(2,9,5)
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetIndicatorCurrent[] = { &wxluatype_wxStyledTextCtrl, NULL };
@@ -6710,6 +6772,24 @@ static int LUACALL wxLua_wxStyledTextCtrl_LineLength(lua_State *L)
     return 1;
 }
 
+
+#if wxCHECK_VERSION(3,1,1)
+static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_LineReverse[] = { &wxluatype_wxStyledTextCtrl, NULL };
+static int LUACALL wxLua_wxStyledTextCtrl_LineReverse(lua_State *L);
+static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_LineReverse[1] = {{ wxLua_wxStyledTextCtrl_LineReverse, WXLUAMETHOD_METHOD, 1, 1, s_wxluatypeArray_wxLua_wxStyledTextCtrl_LineReverse }};
+//     %wxchkver_3_1_1 void LineReverse();
+static int LUACALL wxLua_wxStyledTextCtrl_LineReverse(lua_State *L)
+{
+    // get this
+    wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
+    // call LineReverse
+    self->LineReverse();
+
+    return 0;
+}
+
+#endif // wxCHECK_VERSION(3,1,1)
+
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_LineScroll[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, &wxluatype_TNUMBER, NULL };
 static int LUACALL wxLua_wxStyledTextCtrl_LineScroll(lua_State *L);
 static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_LineScroll[1] = {{ wxLua_wxStyledTextCtrl_LineScroll, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_LineScroll }};
@@ -8376,6 +8456,25 @@ static int LUACALL wxLua_wxStyledTextCtrl_SendMsg(lua_State *L)
 }
 
 
+#if wxCHECK_VERSION(3,1,1)
+static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetAccessibility[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, NULL };
+static int LUACALL wxLua_wxStyledTextCtrl_SetAccessibility(lua_State *L);
+static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_SetAccessibility[1] = {{ wxLua_wxStyledTextCtrl_SetAccessibility, WXLUAMETHOD_METHOD, 2, 2, s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetAccessibility }};
+//     %wxchkver_3_1_1 void SetAccessibility(int accessibility);
+static int LUACALL wxLua_wxStyledTextCtrl_SetAccessibility(lua_State *L)
+{
+    // int accessibility
+    int accessibility = (int)wxlua_getnumbertype(L, 2);
+    // get this
+    wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
+    // call SetAccessibility
+    self->SetAccessibility(accessibility);
+
+    return 0;
+}
+
+#endif // wxCHECK_VERSION(3,1,1)
+
 #if (wxCHECK_VERSION(2,9,5)) && (wxLUA_USE_wxColourPenBrush)
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetAdditionalCaretForeground[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_wxColour, NULL };
 static int LUACALL wxLua_wxStyledTextCtrl_SetAdditionalCaretForeground(lua_State *L);
@@ -8644,6 +8743,25 @@ static int LUACALL wxLua_wxStyledTextCtrl_SetCaretLineBackground(lua_State *L)
 }
 
 #endif // (wxCHECK_VERSION(2,8,0)) && (wxLUA_USE_wxColourPenBrush)
+
+#if wxCHECK_VERSION(3,1,1)
+static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetCaretLineFrame[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TNUMBER, NULL };
+static int LUACALL wxLua_wxStyledTextCtrl_SetCaretLineFrame(lua_State *L);
+static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_SetCaretLineFrame[1] = {{ wxLua_wxStyledTextCtrl_SetCaretLineFrame, WXLUAMETHOD_METHOD, 2, 2, s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetCaretLineFrame }};
+//     %wxchkver_3_1_1 void SetCaretLineFrame(int width);
+static int LUACALL wxLua_wxStyledTextCtrl_SetCaretLineFrame(lua_State *L)
+{
+    // int width
+    int width = (int)wxlua_getnumbertype(L, 2);
+    // get this
+    wxStyledTextCtrl * self = (wxStyledTextCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxStyledTextCtrl);
+    // call SetCaretLineFrame
+    self->SetCaretLineFrame(width);
+
+    return 0;
+}
+
+#endif // wxCHECK_VERSION(3,1,1)
 
 static wxLuaArgType s_wxluatypeArray_wxLua_wxStyledTextCtrl_SetCaretLineVisible[] = { &wxluatype_wxStyledTextCtrl, &wxluatype_TBOOLEAN, NULL };
 static int LUACALL wxLua_wxStyledTextCtrl_SetCaretLineVisible(lua_State *L);
@@ -12686,6 +12804,23 @@ static int LUACALL wxLua_wxStyledTextCtrl_constructor(lua_State *L)
 
 
 
+#if (!wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
+// function overload table
+static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection_overload[] =
+{
+
+#if !wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5)
+    { wxLua_wxStyledTextCtrl_AddSelection1, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection1 },
+#endif // !wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5)
+
+#if wxCHECK_VERSION(3,1,1)
+    { wxLua_wxStyledTextCtrl_AddSelection, WXLUAMETHOD_METHOD, 3, 3, s_wxluatypeArray_wxLua_wxStyledTextCtrl_AddSelection },
+#endif // wxCHECK_VERSION(3,1,1)
+};
+static int s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection_overload_count = sizeof(s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection_overload)/sizeof(wxLuaBindCFunc);
+
+#endif // (!wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
+
 #if (!wxCHECK_VERSION(3,1,1))||(wxCHECK_VERSION(3,1,1))
 // function overload table
 static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_BraceMatch_overload[] =
@@ -12703,7 +12838,7 @@ static int s_wxluafunc_wxLua_wxStyledTextCtrl_BraceMatch_overload_count = sizeof
 
 #endif // (!wxCHECK_VERSION(3,1,1))||(wxCHECK_VERSION(3,1,1))
 
-#if (!wxCHECK_VERSION(2,9,5))
+#if (!wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
 // function overload table
 static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndentationGuides_overload[] =
 {
@@ -12712,13 +12847,13 @@ static wxLuaBindCFunc s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndentationGuides_ov
     { wxLua_wxStyledTextCtrl_GetIndentationGuides1, WXLUAMETHOD_METHOD, 1, 1, s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetIndentationGuides1 },
 #endif // !wxCHECK_VERSION(2,9,5)
 
-#if !wxCHECK_VERSION(2,9,5)
+#if wxCHECK_VERSION(3,1,1)
     { wxLua_wxStyledTextCtrl_GetIndentationGuides, WXLUAMETHOD_METHOD, 1, 1, s_wxluatypeArray_wxLua_wxStyledTextCtrl_GetIndentationGuides },
-#endif // !wxCHECK_VERSION(2,9,5)
+#endif // wxCHECK_VERSION(3,1,1)
 };
 static int s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndentationGuides_overload_count = sizeof(s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndentationGuides_overload)/sizeof(wxLuaBindCFunc);
 
-#endif // (!wxCHECK_VERSION(2,9,5))
+#endif // (!wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
 
 #if (!wxCHECK_VERSION(3,1,1))||(wxCHECK_VERSION(3,1,1))
 // function overload table
@@ -12846,9 +12981,9 @@ void wxLua_wxStyledTextCtrl_delete_function(void** p)
 wxLuaBindMethod wxStyledTextCtrl_methods[] = {
     { "AddRefDocument", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_AddRefDocument, 1, NULL },
 
-#if wxCHECK_VERSION(2,9,5)
-    { "AddSelection", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection, 1, NULL },
-#endif // wxCHECK_VERSION(2,9,5)
+#if (!wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
+    { "AddSelection", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection_overload, s_wxluafunc_wxLua_wxStyledTextCtrl_AddSelection_overload_count, 0 },
+#endif // (!wxCHECK_VERSION(3,1,1) && wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
 
 #if wxCHECK_VERSION(3,1,0)
     { "AddTabStop", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_AddTabStop, 1, NULL },
@@ -13124,6 +13259,10 @@ wxLuaBindMethod wxStyledTextCtrl_methods[] = {
     { "FreeSubStyles", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_FreeSubStyles, 1, NULL },
 #endif // wxCHECK_VERSION(3,1,0)
 
+#if wxCHECK_VERSION(3,1,1)
+    { "GetAccessibility", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetAccessibility, 1, NULL },
+#endif // wxCHECK_VERSION(3,1,1)
+
 #if (wxCHECK_VERSION(2,9,5)) && (wxLUA_USE_wxColourPenBrush)
     { "GetAdditionalCaretForeground", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetAdditionalCaretForeground, 1, NULL },
 #endif // (wxCHECK_VERSION(2,9,5)) && (wxLUA_USE_wxColourPenBrush)
@@ -13160,6 +13299,10 @@ wxLuaBindMethod wxStyledTextCtrl_methods[] = {
 #if (wxCHECK_VERSION(2,8,0)) && (wxLUA_USE_wxColourPenBrush)
     { "GetCaretLineBackground", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetCaretLineBackground, 1, NULL },
 #endif // (wxCHECK_VERSION(2,8,0)) && (wxLUA_USE_wxColourPenBrush)
+
+#if wxCHECK_VERSION(3,1,1)
+    { "GetCaretLineFrame", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetCaretLineFrame, 1, NULL },
+#endif // wxCHECK_VERSION(3,1,1)
 
     { "GetCaretLineVisible", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetCaretLineVisible, 1, NULL },
 
@@ -13240,9 +13383,9 @@ wxLuaBindMethod wxStyledTextCtrl_methods[] = {
 
     { "GetIndent", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndent, 1, NULL },
 
-#if (!wxCHECK_VERSION(2,9,5))
+#if (!wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
     { "GetIndentationGuides", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndentationGuides_overload, s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndentationGuides_overload_count, 0 },
-#endif // (!wxCHECK_VERSION(2,9,5))
+#endif // (!wxCHECK_VERSION(2,9,5))||(wxCHECK_VERSION(3,1,1))
 
 #if wxCHECK_VERSION(2,9,5)
     { "GetIndicatorCurrent", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_GetIndicatorCurrent, 1, NULL },
@@ -13591,6 +13734,11 @@ wxLuaBindMethod wxStyledTextCtrl_methods[] = {
     { "LineEndWrapExtend", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_LineEndWrapExtend, 1, NULL },
     { "LineFromPosition", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_LineFromPosition, 1, NULL },
     { "LineLength", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_LineLength, 1, NULL },
+
+#if wxCHECK_VERSION(3,1,1)
+    { "LineReverse", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_LineReverse, 1, NULL },
+#endif // wxCHECK_VERSION(3,1,1)
+
     { "LineScroll", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_LineScroll, 1, NULL },
     { "LineScrollDown", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_LineScrollDown, 1, NULL },
     { "LineScrollUp", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_LineScrollUp, 1, NULL },
@@ -13778,6 +13926,10 @@ wxLuaBindMethod wxStyledTextCtrl_methods[] = {
     { "SelectionIsRectangle", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SelectionIsRectangle, 1, NULL },
     { "SendMsg", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SendMsg, 1, NULL },
 
+#if wxCHECK_VERSION(3,1,1)
+    { "SetAccessibility", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetAccessibility, 1, NULL },
+#endif // wxCHECK_VERSION(3,1,1)
+
 #if (wxCHECK_VERSION(2,9,5)) && (wxLUA_USE_wxColourPenBrush)
     { "SetAdditionalCaretForeground", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetAdditionalCaretForeground, 1, NULL },
 #endif // (wxCHECK_VERSION(2,9,5)) && (wxLUA_USE_wxColourPenBrush)
@@ -13821,6 +13973,10 @@ wxLuaBindMethod wxStyledTextCtrl_methods[] = {
 #if (wxCHECK_VERSION(2,8,0)) && (wxLUA_USE_wxColourPenBrush)
     { "SetCaretLineBackground", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetCaretLineBackground, 1, NULL },
 #endif // (wxCHECK_VERSION(2,8,0)) && (wxLUA_USE_wxColourPenBrush)
+
+#if wxCHECK_VERSION(3,1,1)
+    { "SetCaretLineFrame", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetCaretLineFrame, 1, NULL },
+#endif // wxCHECK_VERSION(3,1,1)
 
     { "SetCaretLineVisible", WXLUAMETHOD_METHOD, s_wxluafunc_wxLua_wxStyledTextCtrl_SetCaretLineVisible, 1, NULL },
 
@@ -15420,6 +15576,8 @@ wxLuaBindNumber* wxLuaGetDefineList_wxstc(size_t &count)
         { "wxSTC_ABL_STRING", wxSTC_ABL_STRING },
         { "wxSTC_ABL_TASKMARKER", wxSTC_ABL_TASKMARKER },
         { "wxSTC_ABL_WORD", wxSTC_ABL_WORD },
+        { "wxSTC_ACCESSIBILITY_DISABLED", wxSTC_ACCESSIBILITY_DISABLED },
+        { "wxSTC_ACCESSIBILITY_ENABLED", wxSTC_ACCESSIBILITY_ENABLED },
         { "wxSTC_AC_COMMAND", wxSTC_AC_COMMAND },
         { "wxSTC_AC_DOUBLECLICK", wxSTC_AC_DOUBLECLICK },
         { "wxSTC_AC_FILLUP", wxSTC_AC_FILLUP },
@@ -16998,6 +17156,10 @@ wxLuaBindNumber* wxLuaGetDefineList_wxstc(size_t &count)
         { "wxSTC_LEX_IHEX", wxSTC_LEX_IHEX },
 #endif // wxCHECK_VERSION(3,1,0)
 
+#if wxCHECK_VERSION(3,1,1)
+        { "wxSTC_LEX_INDENT", wxSTC_LEX_INDENT },
+#endif // wxCHECK_VERSION(3,1,1)
+
 #if wxCHECK_VERSION(2,8,12)
         { "wxSTC_LEX_INNOSETUP", wxSTC_LEX_INNOSETUP },
 #endif // wxCHECK_VERSION(2,8,12)
@@ -17903,6 +18065,14 @@ wxLuaBindNumber* wxLuaGetDefineList_wxstc(size_t &count)
         { "wxSTC_P_DECORATOR", wxSTC_P_DECORATOR },
         { "wxSTC_P_DEFAULT", wxSTC_P_DEFAULT },
         { "wxSTC_P_DEFNAME", wxSTC_P_DEFNAME },
+
+#if wxCHECK_VERSION(3,1,1)
+        { "wxSTC_P_FCHARACTER", wxSTC_P_FCHARACTER },
+        { "wxSTC_P_FSTRING", wxSTC_P_FSTRING },
+        { "wxSTC_P_FTRIPLE", wxSTC_P_FTRIPLE },
+        { "wxSTC_P_FTRIPLEDOUBLE", wxSTC_P_FTRIPLEDOUBLE },
+#endif // wxCHECK_VERSION(3,1,1)
+
         { "wxSTC_P_IDENTIFIER", wxSTC_P_IDENTIFIER },
         { "wxSTC_P_NUMBER", wxSTC_P_NUMBER },
         { "wxSTC_P_OPERATOR", wxSTC_P_OPERATOR },

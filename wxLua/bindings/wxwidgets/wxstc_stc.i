@@ -105,8 +105,7 @@
 %wxchkver_2_9_2  #define wxSTC_MARGIN_RTEXT
 %wxchkver_3_1_1 #define wxSTC_MARGIN_COLOUR
 
-/// Styles in range 32..38 are predefined for parts of the UI and are not used as normal styles.
-/// Style 39 is for future use.
+/// Styles in range 32..39 are predefined for parts of the UI and are not used as normal styles.
 #define wxSTC_STYLE_DEFAULT
 #define wxSTC_STYLE_LINENUMBER
 #define wxSTC_STYLE_BRACELIGHT
@@ -258,6 +257,8 @@
 %wxchkver_2_9_5 #define wxSTC_EFF_QUALITY_LCD_OPTIMIZED
 %wxchkver_2_9_5 #define wxSTC_MULTIPASTE_ONCE
 %wxchkver_2_9_5 #define wxSTC_MULTIPASTE_EACH
+%wxchkver_3_1_1 #define wxSTC_ACCESSIBILITY_DISABLED
+%wxchkver_3_1_1 #define wxSTC_ACCESSIBILITY_ENABLED
 #define wxSTC_EDGE_NONE
 #define wxSTC_EDGE_LINE
 #define wxSTC_EDGE_BACKGROUND
@@ -538,6 +539,7 @@
 %wxchkver_3_1_0 #define wxSTC_LEX_TEHEX
 %wxchkver_3_1_1 #define wxSTC_LEX_JSON
 %wxchkver_3_1_1 #define wxSTC_LEX_EDIFACT
+%wxchkver_3_1_1 #define wxSTC_LEX_INDENT
 
 /// When a lexer specifies its language as SCLEX_AUTOMATIC it receives a
 /// value assigned in sequence from SCLEX_AUTOMATIC+1.
@@ -560,6 +562,10 @@
 #define wxSTC_P_STRINGEOL
 #define wxSTC_P_WORD2
 #define wxSTC_P_DECORATOR
+%wxchkver_3_1_1 #define wxSTC_P_FSTRING
+%wxchkver_3_1_1 #define wxSTC_P_FCHARACTER
+%wxchkver_3_1_1 #define wxSTC_P_FTRIPLE
+%wxchkver_3_1_1 #define wxSTC_P_FTRIPLEDOUBLE
 
 /// Lexical states for SCLEX_CPP, SCLEX_BULLANT, SCLEX_COBOL, SCLEX_TACL, SCLEX_TAL
 #define wxSTC_C_DEFAULT
@@ -3618,7 +3624,7 @@ class wxStyledTextCtrl : public wxControl
     /**
         Add a selection
     */
-    %wxchkver_2_9_5 int AddSelection(int caret, int anchor);
+    %wxchkver_3_1_1 void AddSelection(int caret, int anchor);
 
     /**
         Drop one selection
@@ -4990,6 +4996,18 @@ class wxStyledTextCtrl : public wxControl
     %wxchkver_3_1_0 void SetIMEInteraction(int imeInteraction);
 
     /**
+        Retrieve the caret line frame width.
+        Width = 0 means this option is disabled.
+    */
+    %wxchkver_3_1_1 int GetCaretLineFrame() const;
+
+    /**
+        Display the caret line framed.
+        Set width != 0 to enable this option and width = 0 to disable it.
+    */
+    %wxchkver_3_1_1 void SetCaretLineFrame(int width);
+
+    /**
         Get the code page used to interpret the bytes of the document as characters.
     */
     int GetCodePage() const;
@@ -5033,6 +5051,21 @@ class wxStyledTextCtrl : public wxControl
         @since 3.1.0
     */
     %wxchkver_3_1_0 void SetPhasesDraw(int phases);
+
+    /**
+        Enable or disable accessibility.
+    */
+    %wxchkver_3_1_1 void SetAccessibility(int accessibility);
+
+    /**
+        Report accessibility status.
+    */
+    %wxchkver_3_1_1 int GetAccessibility() const;
+
+    /**
+        Reverse order of selected lines.
+    */
+    %wxchkver_3_1_1 void LineReverse();
 
     /**
         Change internal focus flag.
@@ -5181,7 +5214,7 @@ class wxStyledTextCtrl : public wxControl
         The return value will be one of the
         @link wxStyledTextCtrl::wxSTC_IV_NONE wxSTC_IV_* @endlink constants.
     */
-    !%wxchkver_2_9_5 bool GetIndentationGuides();
+    %wxchkver_3_1_1 int GetIndentationGuides() const;
 
     /**
         Set the highlighted indentation guide column.
@@ -7113,6 +7146,7 @@ class wxStyledTextCtrl : public wxControl
     !%wxchkver_2_9_5 void SetCaretSticky(bool useCaretStickyBehaviour);
     !%wxchkver_2_9_5 void SetIndentationGuides(bool show);
     !%wxchkver_3_1_0 int PositionFromPoint(const wxPoint& pt) const;
+    !%wxchkver_3_1_1 && %wxchkver_2_9_5 int AddSelection(int caret, int anchor);
     !%wxchkver_3_1_1 int BraceMatch(int pos);
     !%wxchkver_3_1_1 int GetPropertyInt(const wxString& key) const;
     !%wxchkver_3_1_1 void UsePopUp(bool allowPopUp);
