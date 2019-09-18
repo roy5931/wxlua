@@ -34,6 +34,7 @@ set( wxLua_MAJOR_VERSION     "2" )
 set( wxLua_MINOR_VERSION     "8" )
 set( wxLua_RELEASE_VERSION   "12" )
 set( wxLua_SUBRELEASE_NUMBER "3")
+set(CMAKE_MACOSX_RPATH 1)
 
 # ===========================================================================
 # wxWidgets libraries and wxLua bindings setup
@@ -368,9 +369,9 @@ ADD_DOXYGEN( wxLua_doxygen
 
 SETUP_wxLua() # all libraries are built with these settings
 
-if (NOT TARGET wxStEditLib)
-    add_subdirectory( modules/wxstedit )
-endif()
+#if (NOT TARGET wxStEditLib)
+#    add_subdirectory( modules/wxstedit )
+#endif()
 
 include_directories(${wxLuaBind_WXLUASETUP_DIR})
 

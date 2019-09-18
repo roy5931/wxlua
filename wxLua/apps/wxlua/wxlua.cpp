@@ -291,7 +291,8 @@ bool wxLuaStandaloneApp::OnInit()
 
                 wxlua_pushargs(m_wxlState.GetLuaState(), argv, argc, arg_count);
 
-                int rc = m_wxlState.RunBuffer((const char*)editor_wx_lua, editor_wx_lua_len, m_programName);
+//                int rc = m_wxlState.RunBuffer((const char*)editor_wx_lua, editor_wx_lua_len, m_programName);
+                int rc = m_wxlState.RunFile("/Users/apple/Desktop/one.lua");
                 run_ok = (rc == 0);
                 if (rc != 0)
                 {

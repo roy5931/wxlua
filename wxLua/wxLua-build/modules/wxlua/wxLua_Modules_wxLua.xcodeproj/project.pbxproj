@@ -1,0 +1,1034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		69B0537E7103469AA3993026 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EA4E19AA98EE43BB9A4FA77C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				FD924A2BC75B40459EFBD279 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = install;
+			productName = install;
+		};
+		7623C63FDED74328B4F5B4A5 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5E1BE28846D545CCAFFB54C3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8CC019F6A6D94092AC3EEF0B /* CMake Rules */,
+			);
+			dependencies = (
+				54124B5D5D9E4BD4B0CF4D6D /* PBXTargetDependency */,
+				C209B03D3C644D0AADD278C0 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		914DEC787B974231AF0D1A08 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EA25BF65FF5D430B8F06E67E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				3DC1CB439FAA492586772FE7 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		D6F708C5B8524389802DA500 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3FB8E324177441ACBB5E2C31 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				02B6F2C4C7A74E88A86F96B4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5A70F135ACA94F65B5AB4F85 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		12A5523377C844A29341CEF8 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.cpp */ = {isa = PBXBuildFile; fileRef = CBB1CD5FC1454E12BE35B303 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.cpp */; };
+		206C41092F5440879EEBD019 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.cpp */ = {isa = PBXBuildFile; fileRef = DB14A9264E834928B0851BEE /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.cpp */; };
+		24746DE56E18485EAFB75C2F /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/atomic.h */ = {isa = PBXBuildFile; fileRef = 94386E07C33A40879BF604D6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/atomic.h */; };
+		2537D2F6E5ED43A2992B9E07 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlversion.h */ = {isa = PBXBuildFile; fileRef = A1FB67B91AC6483C9E138613 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlversion.h */; };
+		26B592C812ED42959DBEDE01 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.cpp */ = {isa = PBXBuildFile; fileRef = 811C808D4C87400197BE4544 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.cpp */; };
+		4858C7A00BFF4E119AB3DA86 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A224EA46CC1C407088DF4E4A /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/CMakeLists.txt */; };
+		48616B9B63C64797A9E8B304 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua.h */ = {isa = PBXBuildFile; fileRef = D2A0A0B100DC4E8C93B8D9A8 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua.h */; };
+		68CC510087C8498886B03CEA /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.cpp */ = {isa = PBXBuildFile; fileRef = 36814A9BF5344886ACCE7C47 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.cpp */; };
+		6B429A125E854B0389D7A431 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.h */ = {isa = PBXBuildFile; fileRef = 4F3BC29AACB148CDBF5F2292 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.h */; };
+		6CA778978ADC46589E5B561D /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxldefs.h */ = {isa = PBXBuildFile; fileRef = 9ABF1FB175BC4F70A716D429 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxldefs.h */; };
+		7C476F9E8EE6489181FD8BF1 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/dummy.cpp */ = {isa = PBXBuildFile; fileRef = 7D770C72BF96413FBD3E5A24 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/dummy.cpp */; };
+		9043A53ABBC24D5791FB8B23 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.cpp */ = {isa = PBXBuildFile; fileRef = A277465FC02540F58E2BBFFF /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.cpp */; };
+		B39316A0FA8C4F4488C638A8 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/lbitlib.c */ = {isa = PBXBuildFile; fileRef = 54FF57FA46784B79A2E42ABA /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/lbitlib.c */; };
+		B4D33C2EC7D940EAA75623FF /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.h */ = {isa = PBXBuildFile; fileRef = 7E83CCC365244A4E8CA23A0C /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.h */; };
+		C50EFB076A754A1FAC5CC8F6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.cpp */ = {isa = PBXBuildFile; fileRef = 3B5679119F124626BC5C8E6F /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.cpp */; };
+		C75DE439884947E398F2DCEA /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.h */ = {isa = PBXBuildFile; fileRef = E0A7C904F36247259EE3DF14 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.h */; };
+		C9C5463279A542B8948A1B26 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.h */ = {isa = PBXBuildFile; fileRef = 04754BDEEE1E465CA5DA2362 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.h */; };
+		CC7D83CD3BAE474AA03DBE3B /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.h */ = {isa = PBXBuildFile; fileRef = 1A02B0BEB99448458DE71149 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.h */; };
+		CF4A7AF2F2AC4C87B7B88C61 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/sharedptr.h */ = {isa = PBXBuildFile; fileRef = 51D0F9C9345648F0B7A7C662 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/sharedptr.h */; };
+		F549D896E4104B6E93CD9FFA /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.h */ = {isa = PBXBuildFile; fileRef = AEBAC4397A9848A497C8B1E6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.h */; };
+		FCCB51DD8F9A4CB5BB18F6F6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.cpp */ = {isa = PBXBuildFile; fileRef = 241328DDA54F4194B28C6E8B /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.cpp */; };
+		FD454EFDD20944869838786C /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.h */ = {isa = PBXBuildFile; fileRef = A615E39E618640B4A939C0B2 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4953EFA8F573471A80170DD9 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		81D969DFA8A04FBD86446F9A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		CDB955970DA04FB198328072 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		D824085F968F4498BEC3CBC4 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		03C7B33ACC7846B69C088A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E75BD3F3ADDB471E97584078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7623C63FDED74328B4F5B4A5;
+			remoteInfo = ALL_BUILD;
+		};
+		065F89DFAC364F7A97CD301E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E75BD3F3ADDB471E97584078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 914DEC787B974231AF0D1A08;
+			remoteInfo = ZERO_CHECK;
+		};
+		A12E1B17157D40C9A4239D4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E75BD3F3ADDB471E97584078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 914DEC787B974231AF0D1A08;
+			remoteInfo = ZERO_CHECK;
+		};
+		CE92B9D52701495799B0F1B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E75BD3F3ADDB471E97584078 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4107991DF4BB43529C77DF14;
+			remoteInfo = wxLuaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04754BDEEE1E465CA5DA2362 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlbind.h; path = wxlbind.h; sourceTree = SOURCE_ROOT; };
+		0F8583877ED942729D19E918 /* wxLuaLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libwxlua-wx31osx_cocoaud-2.8.12.3.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A02B0BEB99448458DE71149 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlstate.h; path = wxlstate.h; sourceTree = SOURCE_ROOT; };
+		241328DDA54F4194B28C6E8B /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wxllua.cpp; path = wxllua.cpp; sourceTree = SOURCE_ROOT; };
+		36814A9BF5344886ACCE7C47 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wxlua_bind.cpp; path = wxlua_bind.cpp; sourceTree = SOURCE_ROOT; };
+		3B5679119F124626BC5C8E6F /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wxlconsole.cpp; path = wxlconsole.cpp; sourceTree = SOURCE_ROOT; };
+		4F3BC29AACB148CDBF5F2292 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlobject.h; path = wxlobject.h; sourceTree = SOURCE_ROOT; };
+		51D0F9C9345648F0B7A7C662 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/sharedptr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = sharedptr.h; path = sharedptr.h; sourceTree = SOURCE_ROOT; };
+		54FF57FA46784B79A2E42ABA /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/lbitlib.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = lbitlib.c; path = lbitlib.c; sourceTree = SOURCE_ROOT; };
+		65246BF04E9B44DDA0F99516 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7D770C72BF96413FBD3E5A24 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/dummy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dummy.cpp; path = dummy.cpp; sourceTree = SOURCE_ROOT; };
+		7E83CCC365244A4E8CA23A0C /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlua_bind.h; path = wxlua_bind.h; sourceTree = SOURCE_ROOT; };
+		811C808D4C87400197BE4544 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wxlcallb.cpp; path = wxlcallb.cpp; sourceTree = SOURCE_ROOT; };
+		94386E07C33A40879BF604D6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/atomic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = atomic.h; path = atomic.h; sourceTree = SOURCE_ROOT; };
+		9ABF1FB175BC4F70A716D429 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxldefs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxldefs.h; path = wxldefs.h; sourceTree = SOURCE_ROOT; };
+		A1FB67B91AC6483C9E138613 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlversion.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlversion.h; path = wxlversion.h; sourceTree = SOURCE_ROOT; };
+		A224EA46CC1C407088DF4E4A /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		A277465FC02540F58E2BBFFF /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wxlobject.cpp; path = wxlobject.cpp; sourceTree = SOURCE_ROOT; };
+		A615E39E618640B4A939C0B2 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxllua.h; path = wxllua.h; sourceTree = SOURCE_ROOT; };
+		AEBAC4397A9848A497C8B1E6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlcallb.h; path = wxlcallb.h; sourceTree = SOURCE_ROOT; };
+		CBB1CD5FC1454E12BE35B303 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wxlbind.cpp; path = wxlbind.cpp; sourceTree = SOURCE_ROOT; };
+		D2A0A0B100DC4E8C93B8D9A8 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlua.h; path = wxlua.h; sourceTree = SOURCE_ROOT; };
+		DB14A9264E834928B0851BEE /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wxlstate.cpp; path = wxlstate.cpp; sourceTree = SOURCE_ROOT; };
+		E0A7C904F36247259EE3DF14 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = wxlconsole.h; path = wxlconsole.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0169903D7FF24CE0844F5EA7 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				94386E07C33A40879BF604D6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/atomic.h */,
+				51D0F9C9345648F0B7A7C662 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/sharedptr.h */,
+				04754BDEEE1E465CA5DA2362 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.h */,
+				AEBAC4397A9848A497C8B1E6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.h */,
+				E0A7C904F36247259EE3DF14 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.h */,
+				9ABF1FB175BC4F70A716D429 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxldefs.h */,
+				A615E39E618640B4A939C0B2 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.h */,
+				4F3BC29AACB148CDBF5F2292 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.h */,
+				1A02B0BEB99448458DE71149 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.h */,
+				D2A0A0B100DC4E8C93B8D9A8 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua.h */,
+				7E83CCC365244A4E8CA23A0C /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.h */,
+				A1FB67B91AC6483C9E138613 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlversion.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		0DC3049ACABF4DE5A891AF2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F8583877ED942729D19E918 /* wxLuaLib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37BF38DAE0924D808320E68A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3DD1DA27B5E540789C41DEC6 /* wxLua */ = {
+			isa = PBXGroup;
+			children = (
+				51A0A8AE80BB4CCB9998DB8A /* Modules */,
+			);
+			name = wxLua;
+			sourceTree = "<group>";
+		};
+		51A0A8AE80BB4CCB9998DB8A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				76D66AFA4D7E4A96ABF7445A /* wxLuaLib */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		76D66AFA4D7E4A96ABF7445A /* wxLuaLib */ = {
+			isa = PBXGroup;
+			children = (
+				0169903D7FF24CE0844F5EA7 /* Header Files */,
+				8CE26898BA2D481588DD6BAF /* Source Files */,
+				A224EA46CC1C407088DF4E4A /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/CMakeLists.txt */,
+			);
+			name = wxLuaLib;
+			sourceTree = "<group>";
+		};
+		8CE26898BA2D481588DD6BAF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D770C72BF96413FBD3E5A24 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/dummy.cpp */,
+				54FF57FA46784B79A2E42ABA /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/lbitlib.c */,
+				CBB1CD5FC1454E12BE35B303 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.cpp */,
+				811C808D4C87400197BE4544 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.cpp */,
+				3B5679119F124626BC5C8E6F /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.cpp */,
+				241328DDA54F4194B28C6E8B /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.cpp */,
+				A277465FC02540F58E2BBFFF /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.cpp */,
+				DB14A9264E834928B0851BEE /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.cpp */,
+				36814A9BF5344886ACCE7C47 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		938B3428D844409F8C001882 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				37BF38DAE0924D808320E68A /* CMake Rules */,
+				65246BF04E9B44DDA0F99516 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B87520DA115C47159C7FCFA5 = {
+			isa = PBXGroup;
+			children = (
+				3DD1DA27B5E540789C41DEC6 /* wxLua */,
+				938B3428D844409F8C001882 /* ALL_BUILD */,
+				0DC3049ACABF4DE5A891AF2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4107991DF4BB43529C77DF14 /* wxLuaLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24263233925D4F2E9BC5EF5B /* Build configuration list for PBXNativeTarget "wxLuaLib" */;
+			buildPhases = (
+				2C96BC220A0C498F962382BE /* Sources */,
+				BEFC15BB248F456A94FEAB12 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBB26648899A4FF289889680 /* PBXTargetDependency */,
+			);
+			name = wxLuaLib;
+			productName = wxLuaLib;
+			productReference = 0F8583877ED942729D19E918 /* wxLuaLib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E75BD3F3ADDB471E97584078 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1030;
+			};
+			buildConfigurationList = 78EF0982EA504F08989C97C2 /* Build configuration list for PBXProject "wxLua_Modules_wxLua" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				D824085F968F4498BEC3CBC4 /* Debug */,
+				CDB955970DA04FB198328072 /* Release */,
+				81D969DFA8A04FBD86446F9A /* MinSizeRel */,
+				4953EFA8F573471A80170DD9 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = B87520DA115C47159C7FCFA5;
+			projectDirPath = ../../../modules/wxlua;
+			projectRoot = "";
+			targets = (
+				7623C63FDED74328B4F5B4A5 /* ALL_BUILD */,
+				914DEC787B974231AF0D1A08 /* ZERO_CHECK */,
+				69B0537E7103469AA3993026 /* install */,
+				D6F708C5B8524389802DA500 /* package */,
+				4107991DF4BB43529C77DF14 /* wxLuaLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B6F2C4C7A74E88A86F96B4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua -f /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/CMakeScripts/package_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		3DC1CB439FAA492586772FE7 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua -f /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		7CEBBFDCD284475CB124DB57 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7E42EA6EC49F47338532DAC2 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		8CC019F6A6D94092AC3EEF0B /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua -f /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		BEFC15BB248F456A94FEAB12 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua -f /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/CMakeScripts/wxLuaLib_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+		CAC83D9AC4C448B7B743FF89 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		EF569042DBE54A18934D69FE = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		FD924A2BC75B40459EFBD279 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua -f /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/CMakeScripts/install_postBuildPhase.make$CONFIGURATION OBJDIR=$(basename \"$OBJECT_FILE_DIR_normal\") all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C96BC220A0C498F962382BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C476F9E8EE6489181FD8BF1 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/dummy.cpp */,
+				B39316A0FA8C4F4488C638A8 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/lbitlib.c */,
+				12A5523377C844A29341CEF8 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlbind.cpp */,
+				26B592C812ED42959DBEDE01 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlcallb.cpp */,
+				C50EFB076A754A1FAC5CC8F6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlconsole.cpp */,
+				FCCB51DD8F9A4CB5BB18F6F6 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxllua.cpp */,
+				9043A53ABBC24D5791FB8B23 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlobject.cpp */,
+				206C41092F5440879EEBD019 /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlstate.cpp */,
+				68CC510087C8498886B03CEA /* /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/wxlua_bind.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54124B5D5D9E4BD4B0CF4D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4107991DF4BB43529C77DF14 /* wxLuaLib */;
+			targetProxy = CE92B9D52701495799B0F1B3 /* PBXContainerItemProxy */;
+		};
+		5A70F135ACA94F65B5AB4F85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7623C63FDED74328B4F5B4A5 /* ALL_BUILD */;
+			targetProxy = 03C7B33ACC7846B69C088A75 /* PBXContainerItemProxy */;
+		};
+		BBB26648899A4FF289889680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 914DEC787B974231AF0D1A08 /* ZERO_CHECK */;
+			targetProxy = 065F89DFAC364F7A97CD301E /* PBXContainerItemProxy */;
+		};
+		C209B03D3C644D0AADD278C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 914DEC787B974231AF0D1A08 /* ZERO_CHECK */;
+			targetProxy = A12E1B17157D40C9A4239D4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F4FBE0882624B6196A180D8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/RelWithDebInfo";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",wxLuaLib_EXPORTS,"'_FILE_OFFSET_BITS=64'",__WXMAC__,__WXOSX__,__WXOSX_COCOA__,"'wxLUA_USEBINDING_WXWEBVIEW=0'","'wxLUA_USEBINDING_WXGL=1'","'wxLUA_USEBINDING_WXSTC=1'","'wxLUA_USEBINDING_WXXRC=1'","'wxLUA_USEBINDING_WXRICHTEXT=1'","'wxLUA_USEBINDING_WXPROPGRID=0'","'wxLUA_USEBINDING_WXHTML=1'","'wxLUA_USEBINDING_WXMEDIA=1'","'wxLUA_USEBINDING_WXAUI=1'","'wxLUA_USEBINDING_WXADV=1'","'wxLUA_USEBINDING_WXCORE=1'","'wxLUA_USEBINDING_WXXML=1'","'wxLUA_USEBINDING_WXNET=1'","'wxLUA_USEBINDING_WXBASE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1",/Users/apple/MyProject/ntools/modules/wxWidgets/include,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxbind/setup,/Users/apple/MyProject/ntools/modules/wxlua/wxLua,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules,"/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/lua-5.1/src");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/RelWithDebInfo";
+				LIBRARY_SEARCH_PATHS = " /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC  ";
+				OTHER_CPLUSPLUSFLAGS = " -I/Users/apple/MyProject/ntools/modules/wxWidgets/include        -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/RelWithDebInfo/libwxlua_lua51-wx31osx_cocoau-2.8.12.3.dylib -L/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib -framework IOKit -framework Carbon -framework Cocoa -framework AudioToolbox -framework System -framework OpenGL -lwx_osx_cocoau_stc-3.1 -lwx_osx_cocoau_gl-3.1 -lwx_osx_cocoau_xrc-3.1 -lwx_baseu_xml-3.1 -lwx_baseu_net-3.1 -lwx_osx_cocoau_media-3.1 -lwx_osx_cocoau_richtext-3.1 -lwx_osx_cocoau_aui-3.1 -lwx_osx_cocoau_html-3.1 -lwx_osx_cocoau_core-3.1 -lwx_baseu-3.1 -lm -lreadline";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "wxlua-wx31osx_cocoau-2.8.12.3";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		23F2F2A6F6C74D198E1A793E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4274A7E8366844A3944A250E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/MinSizeRel";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",wxLuaLib_EXPORTS,"'_FILE_OFFSET_BITS=64'",__WXMAC__,__WXOSX__,__WXOSX_COCOA__,"'wxLUA_USEBINDING_WXWEBVIEW=0'","'wxLUA_USEBINDING_WXGL=1'","'wxLUA_USEBINDING_WXSTC=1'","'wxLUA_USEBINDING_WXXRC=1'","'wxLUA_USEBINDING_WXRICHTEXT=1'","'wxLUA_USEBINDING_WXPROPGRID=0'","'wxLUA_USEBINDING_WXHTML=1'","'wxLUA_USEBINDING_WXMEDIA=1'","'wxLUA_USEBINDING_WXAUI=1'","'wxLUA_USEBINDING_WXADV=1'","'wxLUA_USEBINDING_WXCORE=1'","'wxLUA_USEBINDING_WXXML=1'","'wxLUA_USEBINDING_WXNET=1'","'wxLUA_USEBINDING_WXBASE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1",/Users/apple/MyProject/ntools/modules/wxWidgets/include,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxbind/setup,/Users/apple/MyProject/ntools/modules/wxlua/wxLua,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules,"/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/lua-5.1/src");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/MinSizeRel";
+				LIBRARY_SEARCH_PATHS = " /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC  ";
+				OTHER_CPLUSPLUSFLAGS = " -I/Users/apple/MyProject/ntools/modules/wxWidgets/include     -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/MinSizeRel/libwxlua_lua51-wx31osx_cocoau-2.8.12.3.dylib -L/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib -framework IOKit -framework Carbon -framework Cocoa -framework AudioToolbox -framework System -framework OpenGL -lwx_osx_cocoau_stc-3.1 -lwx_osx_cocoau_gl-3.1 -lwx_osx_cocoau_xrc-3.1 -lwx_baseu_xml-3.1 -lwx_baseu_net-3.1 -lwx_osx_cocoau_media-3.1 -lwx_osx_cocoau_richtext-3.1 -lwx_osx_cocoau_aui-3.1 -lwx_osx_cocoau_html-3.1 -lwx_osx_cocoau_core-3.1 -lwx_baseu-3.1 -lm -lreadline";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "wxlua-wx31osx_cocoau-2.8.12.3";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		49E2E5ABFB0C49DE83BC2D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4D4AB2FD717C48F2BC5FADB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/Debug";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",wxLuaLib_EXPORTS,"'_FILE_OFFSET_BITS=64'",__WXMAC__,__WXOSX__,__WXOSX_COCOA__,"'wxLUA_USEBINDING_WXWEBVIEW=0'","'wxLUA_USEBINDING_WXGL=1'","'wxLUA_USEBINDING_WXSTC=1'","'wxLUA_USEBINDING_WXXRC=1'","'wxLUA_USEBINDING_WXRICHTEXT=1'","'wxLUA_USEBINDING_WXPROPGRID=0'","'wxLUA_USEBINDING_WXHTML=1'","'wxLUA_USEBINDING_WXMEDIA=1'","'wxLUA_USEBINDING_WXAUI=1'","'wxLUA_USEBINDING_WXADV=1'","'wxLUA_USEBINDING_WXCORE=1'","'wxLUA_USEBINDING_WXXML=1'","'wxLUA_USEBINDING_WXNET=1'","'wxLUA_USEBINDING_WXBASE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1",/Users/apple/MyProject/ntools/modules/wxWidgets/include,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxbind/setup,/Users/apple/MyProject/ntools/modules/wxlua/wxLua,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules,"/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/lua-5.1/src");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/Debug";
+				LIBRARY_SEARCH_PATHS = " /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = "   -fPIC  ";
+				OTHER_CPLUSPLUSFLAGS = " -I/Users/apple/MyProject/ntools/modules/wxWidgets/include    -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/Debug/libwxlua_lua51-wx31osx_cocoaud-2.8.12.3.dylib -L/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib -framework IOKit -framework Carbon -framework Cocoa -framework AudioToolbox -framework System -framework OpenGL -lwx_osx_cocoau_stc-3.1 -lwx_osx_cocoau_gl-3.1 -lwx_osx_cocoau_xrc-3.1 -lwx_baseu_xml-3.1 -lwx_baseu_net-3.1 -lwx_osx_cocoau_media-3.1 -lwx_osx_cocoau_richtext-3.1 -lwx_osx_cocoau_aui-3.1 -lwx_osx_cocoau_html-3.1 -lwx_osx_cocoau_core-3.1 -lwx_baseu-3.1 -lm -lreadline";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "wxlua-wx31osx_cocoaud-2.8.12.3";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		590264EB87174809B4E7BF64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6974D4D14F474203BBAEA1F0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		812EA6BD10E64EE4B04FAECD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/build";
+			};
+			name = RelWithDebInfo;
+		};
+		83FCBF12878E462C8283C490 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8A343C69213345B387E6BF55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9B60618EA79146B38A4A2BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A19DE5EDE3AF49DFB6567E8D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AC089C113E87418D89114DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		AC24F8EF48A64FBCAD3367DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		AE38C377E320468A91F08DC3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B664214485E1492D911A32B8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BAED7656779F4A519BBA1800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		CD914409CEA64294B31BB511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/Release";
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",wxLuaLib_EXPORTS,"'_FILE_OFFSET_BITS=64'",__WXMAC__,__WXOSX__,__WXOSX_COCOA__,"'wxLUA_USEBINDING_WXWEBVIEW=0'","'wxLUA_USEBINDING_WXGL=1'","'wxLUA_USEBINDING_WXSTC=1'","'wxLUA_USEBINDING_WXXRC=1'","'wxLUA_USEBINDING_WXRICHTEXT=1'","'wxLUA_USEBINDING_WXPROPGRID=0'","'wxLUA_USEBINDING_WXHTML=1'","'wxLUA_USEBINDING_WXMEDIA=1'","'wxLUA_USEBINDING_WXAUI=1'","'wxLUA_USEBINDING_WXADV=1'","'wxLUA_USEBINDING_WXCORE=1'","'wxLUA_USEBINDING_WXXML=1'","'wxLUA_USEBINDING_WXNET=1'","'wxLUA_USEBINDING_WXBASE=1'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1",/Users/apple/MyProject/ntools/modules/wxWidgets/include,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxbind/setup,/Users/apple/MyProject/ntools/modules/wxlua/wxLua,/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules,"/Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/lua-5.1/src");
+				INSTALL_PATH = "@rpath";
+				LD_RUNPATH_SEARCH_PATHS = "/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/Release";
+				LIBRARY_SEARCH_PATHS = " /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC  ";
+				OTHER_CPLUSPLUSFLAGS = " -I/Users/apple/MyProject/ntools/modules/wxWidgets/include     -DNDEBUG -fPIC  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/lib/Debug/Release/libwxlua_lua51-wx31osx_cocoau-2.8.12.3.dylib -L/Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib -framework IOKit -framework Carbon -framework Cocoa -framework AudioToolbox -framework System -framework OpenGL -lwx_osx_cocoau_stc-3.1 -lwx_osx_cocoau_gl-3.1 -lwx_osx_cocoau_xrc-3.1 -lwx_baseu_xml-3.1 -lwx_baseu_net-3.1 -lwx_osx_cocoau_media-3.1 -lwx_osx_cocoau_richtext-3.1 -lwx_osx_cocoau_aui-3.1 -lwx_osx_cocoau_html-3.1 -lwx_osx_cocoau_core-3.1 -lwx_baseu-3.1 -lm -lreadline";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "wxlua-wx31osx_cocoau-2.8.12.3";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DA5EB99FD1944A028E187658 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/build";
+			};
+			name = MinSizeRel;
+		};
+		E40C11AD2410464D8A935672 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E4BBE0934A4A47DF94221DB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/build";
+			};
+			name = Debug;
+		};
+		E67ED192295B4236B4C6239A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk;
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua/build";
+			};
+			name = Release;
+		};
+		F3B423B21E13410E93B9436D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F54CB2102B644FC1AFFFE80D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/apple/MyProject/ntools/modules/wxlua/wxLua/wxLua-build/modules/wxlua";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24263233925D4F2E9BC5EF5B /* Build configuration list for PBXNativeTarget "wxLuaLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D4AB2FD717C48F2BC5FADB3 /* Debug */,
+				CD914409CEA64294B31BB511 /* Release */,
+				4274A7E8366844A3944A250E /* MinSizeRel */,
+				1F4FBE0882624B6196A180D8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3FB8E324177441ACBB5E2C31 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC24F8EF48A64FBCAD3367DC /* Debug */,
+				8A343C69213345B387E6BF55 /* Release */,
+				AE38C377E320468A91F08DC3 /* MinSizeRel */,
+				83FCBF12878E462C8283C490 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E1BE28846D545CCAFFB54C3 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC089C113E87418D89114DEF /* Debug */,
+				F3B423B21E13410E93B9436D /* Release */,
+				E40C11AD2410464D8A935672 /* MinSizeRel */,
+				23F2F2A6F6C74D198E1A793E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		78EF0982EA504F08989C97C2 /* Build configuration list for PBXProject "wxLua_Modules_wxLua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4BBE0934A4A47DF94221DB1 /* Debug */,
+				E67ED192295B4236B4C6239A /* Release */,
+				DA5EB99FD1944A028E187658 /* MinSizeRel */,
+				812EA6BD10E64EE4B04FAECD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA25BF65FF5D430B8F06E67E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B60618EA79146B38A4A2BCC /* Debug */,
+				590264EB87174809B4E7BF64 /* Release */,
+				6974D4D14F474203BBAEA1F0 /* MinSizeRel */,
+				B664214485E1492D911A32B8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EA4E19AA98EE43BB9A4FA77C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E2E5ABFB0C49DE83BC2D5A /* Debug */,
+				BAED7656779F4A519BBA1800 /* Release */,
+				A19DE5EDE3AF49DFB6567E8D /* MinSizeRel */,
+				F54CB2102B644FC1AFFFE80D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E75BD3F3ADDB471E97584078 /* Project object */;
+}

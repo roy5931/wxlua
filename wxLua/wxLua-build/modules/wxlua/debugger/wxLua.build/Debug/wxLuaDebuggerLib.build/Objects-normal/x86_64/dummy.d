@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/apple/MyProject/ntools/modules/wxlua/wxLua/modules/wxlua/debugger/dummy.cpp \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/wxprec.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/defs.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/platform.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/compiler.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/build-cocoa-debug/lib/wx/include/osx_cocoa-unicode-3.1/wx/setup.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/chkconf.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/osx/chkconf.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/osx/cocoa/chkconf.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/unix/chkconf.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/version.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/cpp.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/dlimpexp.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/types.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/debug.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/chartype.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/windowid.h \
+  /Users/apple/MyProject/ntools/modules/wxWidgets/include/wx/features.h
